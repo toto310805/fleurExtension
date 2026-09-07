@@ -14,20 +14,26 @@
   "contributes": {
     "languages": [
       {
-        "id": "lang",
+        "id": "fleur",
         "aliases": [
           "Fleur"
         ],
         "extensions": [
           ".flr"
-        ],
-        "configuration": "./language-configuration.json"
+        ]
       }
     ],
     "commands": [
       {
         "command": "flr.helloWorld",
         "title": "Hello World"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "fleur",
+        "scopeName": "source.fleur",
+        "path": "src/syntaxes/fleur.tmLanguage.json"
       }
     ]
   },

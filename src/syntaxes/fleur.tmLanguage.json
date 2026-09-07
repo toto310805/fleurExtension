@@ -1,0 +1,121 @@
+{
+    "name": "Fleur",
+    "scopeName": "source.fleur",
+
+    "patterns": [
+        {
+            "include": "#comments"
+        },
+        {
+            "include": "#strings"
+        },
+        {
+            "include": "#numbers"
+        },
+        {
+            "include": "#keywords"
+        },
+        {
+            "include": "#constants"
+        },
+        {
+            "include": "#functions"
+        },
+        {
+            "include": "#operators"
+        },
+        {
+            "include": "#accessors"
+        }
+    ],
+
+    "repository": {
+
+        "comments": {
+            "patterns": [
+                {
+                    "name": "comment.line.double-slash.fleur",
+                    "match": "//.*$"
+                }
+            ]
+        },
+
+        "strings": {
+            "patterns": [
+                {
+                    "name": "string.quoted.double.fleur",
+                    "begin": "\"",
+                    "end": "\"",
+                    "patterns": [
+                        {
+                            "name": "constant.character.escape.fleur",
+                            "match": "\\\\."
+                        }
+                    ]
+                }
+            ]
+        },
+
+        "numbers": {
+            "patterns": [
+                {
+                    "name": "constant.numeric.fleur",
+                    "match": "\\b\\d+(\\.\\d+)?\\b"
+                }
+            ]
+        },
+
+        "keywords": {
+            "patterns": [
+                {
+                    "name": "keyword.control.fleur",
+                    "match": "\\b(if|else|when|for|in|while|return)\\b"
+                },
+                {
+                    "name": "keyword.declaration.fleur",
+                    "match": "\\b(const|var|func|proc|struct)\\b"
+                },
+                {
+                    "name": "keyword.operator.logical.fleur",
+                    "match": "\\b(and|or|not)\\b"
+                }
+            ]
+        },
+
+        "constants": {
+            "patterns": [
+                {
+                    "name": "constant.language.fleur",
+                    "match": "\\b(true|false|null)\\b"
+                }
+            ]
+        },
+
+        "functions": {
+            "patterns": [
+                {
+                    "name": "entity.name.function.fleur",
+                    "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*(?=\\s*\\()"
+                }
+            ]
+        },
+
+        "operators": {
+            "patterns": [
+                {
+                    "name": "keyword.operator.fleur",
+                    "match": "==|!=|<=|>=|=>|\\+=|-=|\\*=|/=|%=|=|<|>|\\+|-|\\*|/|%"
+                }
+            ]
+        },
+
+        "accessors": {
+            "patterns": [
+                {
+                    "name": "punctuation.accessor.fleur",
+                    "match": "::"
+                }
+            ]
+        }
+    }
+}
