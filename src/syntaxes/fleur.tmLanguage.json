@@ -1,7 +1,6 @@
 {
     "name": "Fleur",
     "scopeName": "source.fleur",
-
     "patterns": [
         {
             "include": "#comments"
@@ -26,11 +25,36 @@
         },
         {
             "include": "#accessors"
+        },
+        {
+            "include": "#types"
+        },
+        {
+            "include": "#methods"
+        },
+        {
+            "include": "#namespaces"
+        },
+        {
+            "include": "#properties"
+        },
+        {
+            "include": "#objectkeys"
+        },
+        {
+            "include": "#ranges"
+        },
+        {
+            "include": "#punctuation"
+        },
+        {
+            "include": "#dot"
+        },
+        {
+            "include": "#variableDeclarations"
         }
     ],
-
     "repository": {
-
         "comments": {
             "patterns": [
                 {
@@ -39,7 +63,6 @@
                 }
             ]
         },
-
         "strings": {
             "patterns": [
                 {
@@ -55,7 +78,6 @@
                 }
             ]
         },
-
         "numbers": {
             "patterns": [
                 {
@@ -64,7 +86,6 @@
                 }
             ]
         },
-
         "keywords": {
             "patterns": [
                 {
@@ -81,7 +102,6 @@
                 }
             ]
         },
-
         "constants": {
             "patterns": [
                 {
@@ -90,7 +110,6 @@
                 }
             ]
         },
-
         "functions": {
             "patterns": [
                 {
@@ -99,7 +118,6 @@
                 }
             ]
         },
-
         "operators": {
             "patterns": [
                 {
@@ -108,12 +126,91 @@
                 }
             ]
         },
-
         "accessors": {
             "patterns": [
                 {
                     "name": "punctuation.accessor.fleur",
                     "match": "::"
+                }
+            ]
+        },
+        "types": {
+            "patterns": [
+                {
+                    "name": "entity.name.type.fleur",
+                    "match": "(?<=\\bstruct\\s)[A-Z][a-zA-Z0-9_]*"
+                },
+                {
+                    "name": "entity.name.type.fleur",
+                    "match": "\\b[A-Z][a-zA-Z0-9_]*\\b(?=\\s*\\{)"
+                }
+            ]
+        },
+        "methods": {
+            "patterns": [
+                {
+                    "name": "entity.name.function.method.fleur",
+                    "match": "(?<=::)[a-zA-Z_][a-zA-Z0-9_]*(?=\\s*\\()"
+                }
+            ]
+        },
+        "namespaces": {
+            "patterns": [
+                {
+                    "name": "support.namespace.fleur",
+                    "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*(?=::)"
+                }
+            ]
+        },
+        "properties": {
+            "patterns": [
+                {
+                    "name": "variable.other.property.fleur",
+                    "match": "(?<=\\.)[a-zA-Z_][a-zA-Z0-9_]*"
+                }
+            ]
+        },
+        "objectkeys": {
+            "patterns": [
+                {
+                    "name": "varuable.other.property.fleur",
+                    "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*(?=\\s*:)"
+                }
+            ]
+        },
+        "ranges": {
+            "patterns": [
+                {
+                    "name": "keyword.operator.range.fleur",
+                    "match": "\\.\\."
+                }
+            ]
+        },
+        "punctuation": {
+            "patterns": [
+                {
+                    "name": "punctuation.bracket.fleur",
+                    "match": "[{}\\[\\]()]"
+                },
+                {
+                    "name": "punctuation.separator.fleur",
+                    "match": "[,;:]"
+                }
+            ]
+        },
+        "dot": {
+            "patterns": [
+                {
+                    "name": "punctuation.accessor.fleur",
+                    "match": "\\."
+                }
+            ]
+        },
+        "variableDeclarations": {
+            "patterns": [
+                {
+                    "name": "variable.other.declaration.fleur",
+                    "match": "(?<=(const|var)\\s)[a-zA-Z_][a-zA-Z0-9_]*"
                 }
             ]
         }
