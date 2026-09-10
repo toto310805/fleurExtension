@@ -35,6 +35,13 @@
         "scopeName": "source.fleur",
         "path": "src/syntaxes/fleur.tmLanguage.json"
       }
+    ],
+    "themes": [
+      {
+        "label": "Fleur color",
+        "uiTheme": "vs-dark",
+        "path": "src/themes/fleur_color_theme.json"
+      }
     ]
   },
   "scripts": {

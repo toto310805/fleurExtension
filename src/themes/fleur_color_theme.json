@@ -1,0 +1,115 @@
+{
+    "name": "Fleur Dark",
+    "type": "dark",
+    "colors": {},
+    "tokenColors": [
+        {
+            "scope": "comment",
+            "settings": {
+                "foreground": "#6A9955"
+            }
+        },
+        {
+            "scope": "keyword.control.fleur",
+            "settings": {
+                "foreground": "#C586C0"
+            }
+        },
+        {
+            "scope": "keyword.declaration.fleur",
+            "settings": {
+                "foreground": "#569CD6"
+            }
+        },
+        {
+            "scope": "keyword.operator.logical.fleur",
+            "settings": {
+                "foreground": "#C586C0"
+            }
+        },
+        {
+            "scope": "constant.language.fleur",
+            "settings": {
+                "foreground": "#569CD6"
+            }
+        },
+        {
+            "scope": "constant.numeric.fleur",
+            "settings": {
+                "foreground": "#B5CEA8"
+            }
+        },
+        {
+            "scope": "string.quoted.double.fleur",
+            "settings": {
+                "foreground": "#CE9178"
+            }
+        },
+        {
+            "scope": "entity.name.function.fleur",
+            "settings": {
+                "foreground": "#DCDCAA"
+            }
+        },
+        {
+            "scope": "entity.name.function.method.fleur",
+            "settings": {
+                "foreground": "#DCDCAA"
+            }
+        },
+        {
+            "scope": "entity.name.type.fleur",
+            "settings": {
+                "foreground": "#4EC9B0"
+            }
+        },
+        {
+            "scope": "support.namespace.fleur",
+            "settings": {
+                "foreground": "#4EC9B0"
+            }
+        },
+        {
+            "scope": "variable.other.property.fleur",
+            "settings": {
+                "foreground": "#9CDCFE"
+            }
+        },
+        {
+            "scope": "variable.other.declaration.fleur",
+            "settings": {
+                "foreground": "#9CDCFE"
+            }
+        },
+        {
+            "scope": "keyword.operator.range.fleur",
+            "settings": {
+                "foreground": "#D4D4D4"
+            }
+        },
+        {
+            "scope": "keyword.operator.fleur",
+            "settings": {
+                "foreground": "#D4D4D4"
+            }
+        },
+        {
+            "scope": "punctuation.accessor.fleur",
+            "settings": {
+                "foreground": "#D4D4D4"
+            }
+        },
+        {
+            "scope": "punctuation.bracket.fleur",
+            "settings": {
+                "foreground": "#D4D4D4"
+            }
+        },
+        {
+            "scope": "punctuation.separator.fleur",
+            "settings": {
+                "foreground": "#D4D4D4"
+            }
+        }
+    ]
+}
