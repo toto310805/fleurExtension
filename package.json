@@ -20,7 +20,8 @@
         ],
         "extensions": [
           ".flr"
-        ]
+        ],
+        "configuration": "/src/language-configuration.json"
       }
     ],
     "commands": [
