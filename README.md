@@ -1,6 +1,5 @@
 # fleur README
-
-This is the README for your extension "fleur". After writing up a brief description, we recommend including the following sections.
+Fleur extension makes using fleur language on VsCode possible. Here's a few things to know about the fleur language.
 
 ## About fleur
 
