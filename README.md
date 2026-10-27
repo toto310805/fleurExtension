@@ -61,9 +61,6 @@ Here is the proof fleur is a real language :
 io::print("Hello, Fleur (and also the world)");
 Check the exemple/ directory for more comprehensive examples of the language features and standard library usage.
 
-## Documentation
-
-Check the [Documentation] (https://github.com/INEEDTOHAVETHELINK)
 
 ## License
 
